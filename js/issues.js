@@ -111,6 +111,7 @@ const IssuesAPI = {
       let groupTitles = Object.keys(dt);
       cfg.group.forEach((groupTitle, i) => {
         let issues = dt[groupTitle];
+        console.log('issues======' + issues);
         if (issues && issues.length > 0) {
           if (groupTitle.length > 0) {
             $(el).append('<h2>' + groupTitle + '</h2>');
